@@ -8,7 +8,7 @@ import MovieList from "./components/MovieList";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 const moviesUrl = ` https://www.omdbapi.com/?s=movies&apikey=${apiKey}`;
-const seriesUrl = ` https://www.omdbapi.com/?s=series&apikey=${apiKey}&y=2021`;
+const seriesUrl = ` https://www.omdbapi.com/?s=series&apikey=${apiKey}`;
 function App() {
   const [moviesList, setMoviesList] = useState([]);
   const [seriesList, setSeriesList] = useState([]);
