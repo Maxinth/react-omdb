@@ -48,7 +48,7 @@ const InputBox = styled.input`
   min-height: 34px;
   border: 1px solid #000000;
   margin: 4px 0px;
-  /* padding: 0.5rem; */
+  padding: 0 1rem;
 
   @media (min-width: 834px) {
     min-height: 54px;

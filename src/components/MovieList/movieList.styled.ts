@@ -84,6 +84,7 @@ const Card = styled.div`
   font-size: 18px;
   transition: all 0.2s;
   text-align: center;
+  font-family: "DM Sans", sans-serif;
   @media (min-width: 834px) {
     min-width: 300px;
     min-height: 300px;

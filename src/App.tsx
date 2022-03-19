@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import { GlobalStyles } from "./app.styled";
 import SearchBox from "./components/SearchBox";
 import MovieList from "./components/MovieList";
+import Loaders from "./components/CustomLoader";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 const moviesUrl = ` https://www.omdbapi.com/?s=movies&apikey=${apiKey}`;
@@ -13,6 +14,7 @@ function App() {
   const [moviesList, setMoviesList] = useState([]);
   const [seriesList, setSeriesList] = useState([]);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const [filterText, setFilterText] = useState("");
   const [initMovies, setInitMovies] = useState([]);
@@ -44,24 +46,30 @@ function App() {
   };
   // requests for fetching moviesList
   const fetchMovies = async () => {
+    setLoading(true);
     try {
       const response = await axios.get(moviesUrl);
       setMoviesList(response?.data?.Search);
       setInitMovies(response?.data?.Search);
+      setLoading(false);
     } catch (err) {
-      // console.log(err);
+      console.log(error);
+      setLoading(false);
       setError(err);
     }
   };
 
   // fetch series List
   const fetchSeriesList = async () => {
+    setLoading(true);
     try {
       const response = await axios.get(seriesUrl);
       setSeriesList(response?.data?.Search);
       setInitSeries(response?.data?.Search);
+      setLoading(false);
     } catch (err) {
       // console.log(err);
+      setLoading(false);
       setError(err);
     }
   };
@@ -74,6 +82,7 @@ function App() {
     }
   }, [filterText, initMovies, initSeries]);
 
+  /* eslint-disable */
   useEffect(() => {
     fetchMovies();
     fetchSeriesList();
@@ -84,8 +93,14 @@ function App() {
       <Nav />
       <Banner />
       <SearchBox handleSearch={handleFilter} val={filterText} />
-      <MovieList list={moviesList} category="Movies" />
-      <MovieList list={seriesList} category="Series" />
+      {loading ? (
+        <Loaders type="spin" />
+      ) : (
+        <>
+          <MovieList list={moviesList} category="Movies" />
+          <MovieList list={seriesList} category="Series" />
+        </>
+      )}
     </main>
   );
 }
