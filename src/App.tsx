@@ -1,5 +1,3 @@
-// https://www.omdbapi.com/?s=movies&apikey=44feac2a&y=2021
-// https://www.omdbapi.com/?s=series&apikey=44feac2a&y=2021
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
