@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot of <Nav /> 1`] = `
+<nav
+  className="sc-dkPtRN eFACGC"
+>
+  <div
+    className="sc-bdvvtL"
+  >
+    <div
+      className="sc-gsDKAQ"
+    >
+      MyTestApp
+    </div>
+  </div>
+</nav>
+`;

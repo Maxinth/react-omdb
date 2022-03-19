@@ -1,4 +1,5 @@
 import { NavBox, LogoBox, Span } from "./nav.styled";
+import React from "react";
 
 const Nav = () => {
   return (

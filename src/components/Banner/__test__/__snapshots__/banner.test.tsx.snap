@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot of <Banner /> 1`] = `
+<div
+  className="sc-gsDKAQ bYfuev"
+>
+  <h1
+    className="sc-bdvvtL"
+  >
+    Watch something incredible
+  </h1>
+</div>
+`;

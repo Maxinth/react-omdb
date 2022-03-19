@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot of <MovieList with mock props 1`] = `
+<section
+  className="sc-bdvvtL kxrhlG"
+>
+  <p
+    className="sc-gsDKAQ fsJgEz"
+  >
+    FC
+  </p>
+  <section
+    className="sc-hKwDye ixHXeB"
+  >
+    <div
+      className="sc-dkPtRN"
+    >
+      <div
+        className="sc-eCImPb iTldMi"
+      >
+        snapshots
+      </div>
+    </div>
+  </section>
+</section>
+`;

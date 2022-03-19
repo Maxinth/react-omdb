@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot of <SearchBox /> with mockProp 1`] = `
+<div
+  className="sc-gsDKAQ eMXzRO"
+>
+  <label
+    className="sc-dkPtRN dCFilw"
+    htmlFor="search"
+  >
+    Search
+  </label>
+  <input
+    className="sc-hKwDye XTisZ"
+    id="search"
+    onChange={[Function]}
+    type="text"
+    value="80j"
+  />
+</div>
+`;

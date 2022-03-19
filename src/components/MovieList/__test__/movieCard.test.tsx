@@ -1,5 +1,6 @@
 import MovieCard from "../MovieCard";
 import renderer from "react-test-renderer";
+import React from "react";
 
 const mockProps = {
   Poster: "me",

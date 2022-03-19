@@ -1,6 +1,6 @@
 // import MovieList from "../MovieList";
 import { Box, InputBox, Label } from "./searchBox.styled";
-
+import React from "react";
 interface Props {
   handleSearch: (id: string) => void;
   val: string;

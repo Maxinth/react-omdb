@@ -1,6 +1,6 @@
 import MovieCard from "./MovieCard";
 import { Container, Title, MoviesBox, InnerBox } from "./movieList.styled";
-
+import React from "react";
 export interface ListItem {
   Poster: string;
   Title: string;

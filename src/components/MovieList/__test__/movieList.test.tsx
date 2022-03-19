@@ -1,5 +1,6 @@
 import MovieList from "..";
 import renderer from "react-test-renderer";
+import React from "react";
 
 const mockProps = {
   list: [
